@@ -1,0 +1,26 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="property"
+            type="com.pustovit.marsrealestate.network.MarsProperty" />
+
+        <variable
+            name="clickListener"
+            type="com.pustovit.marsrealestate.overview.MarsPropertyClickListener" />
+    </data>
+
+
+    <ImageView
+        android:id="@+id/mars_image"
+        app:imageUrl="@{property.imgSrcUrl}"
+        android:onClick="@{() -> clickListener.onClick(property)}"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:padding="2dp"
+        tools:src="@tools:sample/backgrounds/scenic"/>
+</layout>
