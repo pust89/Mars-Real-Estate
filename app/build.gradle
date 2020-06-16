@@ -76,6 +76,8 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$version_kotlin_coroutines"
 
     // Retrofit Coroutines Support
+    // This library is deprecated!!!!!!!!!!!!!
+    // Please migrate to Retrofit 2.6.0 or newer and its built-in suspend support
     implementation "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:$version_retrofit_coroutines_adapter"
 
     // Glide - sheet
